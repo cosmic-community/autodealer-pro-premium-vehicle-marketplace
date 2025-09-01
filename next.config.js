@@ -1,23 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['cdn.cosmicjs.com', 'imgix.cosmicjs.com'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.cosmicjs.com',
-        port: '',
-        pathname: '/**',
+        hostname: 'imgix.cosmicjs.com',
       },
       {
         protocol: 'https',
-        hostname: 'imgix.cosmicjs.com',
-        port: '',
-        pathname: '/**',
+        hostname: 'cdn.cosmicjs.com',
       },
     ],
   },
-  typedRoutes: false,
 }
 
 module.exports = nextConfig
